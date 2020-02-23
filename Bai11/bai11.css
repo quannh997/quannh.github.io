@@ -1,0 +1,15 @@
+legend{
+    text-align: center;
+    color: orange;
+}
+table{
+    margin-left: 800px;
+    border-collapse: collapse;
+}
+table, td{
+    border: 2px solid orange ;
+}
+#result {
+    text-align: center;
+    color: blue;
+}

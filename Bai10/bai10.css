@@ -1,0 +1,32 @@
+table, td{
+    border:2px solid red ;
+    max-width: 650px;
+    margin-left: 500px;
+}
+img{
+    width: 80px; height: 100px;
+}
+#table1, #table2{
+    width: 50%;
+    border-collapse: collapse;
+}
+#red {
+    color: red;
+   list-style-type: square ;
+
+}
+#table2{
+    border-top: unset;
+}
+#dong1{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+#dong2{
+    background-color: pink;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}

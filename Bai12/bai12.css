@@ -1,0 +1,14 @@
+legend{
+    text-align: center;
+    font-size: 20px;
+    color: green;
+}
+table, td{
+    border: 2px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 750px;
+    margin-top: 20px;
+    background-color: lightgreen ;
+}

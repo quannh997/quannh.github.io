@@ -1,0 +1,18 @@
+h1{
+    color: violet;
+    text-align: center;
+}
+.title{
+    color: white;
+    background-color:violet;
+    display: inline;
+}
+img {
+    width: 200px;
+    float: left;
+    margin-right: 100px;
+}
+a{
+    background-color: thistle ;
+    display: inline-block;
+}

@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: red;
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+}
+table, th, td{
+    border: 1.5px solid red;
+}
+#Nhóm{
+    text-align: center;
+    color: orange;
+}
+thead{
+    background-color: red;
+    color: white;    
+}
+#table{
+   margin: 0px;
+    margin-left: 400px;
+}
