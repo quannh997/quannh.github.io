@@ -1,0 +1,16 @@
+h1{
+    color: green;
+    text-align: center;
+}
+#doan1{
+    background-color: #339999;
+    color: #FFFFFF;
+}
+#doan2{
+    color: green;
+}
+body{
+    background-image: url(./image/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
