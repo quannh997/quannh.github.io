@@ -1,0 +1,14 @@
+h1{
+    color: #ffcc00; ;
+}
+div{
+    color: #ffffff;
+    background-image: url(./image/van_ly_truong_thanh_05.jpg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+body{
+    background-color: #a06421;
+}
+
