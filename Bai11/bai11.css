@@ -3,7 +3,6 @@ legend{
     color: orange;
 }
 table{
-    margin-left: 800px;
     border-collapse: collapse;
 }
 table, td{
@@ -12,4 +11,12 @@ table, td{
 #result {
     text-align: center;
     color: blue;
+}
+#Login{
+    align-items: center;
+}
+div{
+    position:absolute;
+    left:550px ;
+    top:50px;
 }
