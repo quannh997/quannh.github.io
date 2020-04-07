@@ -8,63 +8,78 @@
 </head>
 <body>
     <legend><b>Phiếu đăng ký tham gia chương trình khuyến mại</b></legend>
-    <table>
-        <tr>
-            <td> <lable for="name"> Họ và tên</lable> </td>
-            <td><input type="text" id="name" name="name"> </td>
-        </tr>
-        <tr>
-            <td> <label for="address">Địa chỉ</label></td>
-            <td><input type="text" id="address" name="address" </td>
-        </tr>
-        <tr>
-            <td> <label for="phone">Điện thoại</label></td>
-            <td><input type="number" id="phone" name="phone" maxlength="10" </td>
-        </tr>
-        <tr>
-            <td><label for="sex"> Giới tính</label> </td>
-                <td><input type="radio" id="male" name="sex" value="male">
-                    <label for="male">Nam</label>
-                    <input type="radio" id="female" name="sex" value="female">
-                    <label for="female">Nữ</label>
-                </td>
-        </tr>
-        <tr>
+    <div>
+        <table>
+            <tr>
+                <td> <lable for="name"> Họ và tên</lable> </td>
+                <td><input type="text" id="name" name="name"> </td>
+            </tr>
+            <tr>
+                <td> <label for="address">Địa chỉ</label></td>
+                <td><input type="text" id="address" name="address"> </td>
+            </tr>
+            <tr>
+                <td> <label for="phone">Điện thoại</label></td>
+                <td><input type="number" id="phone" name="phone" minlength="9" maxlength="10"> </td>
+            </tr>
+            <tr>
+                <td><label for="sex"> Giới tính</label> </td>
+                    <td>
+                        <label for="male">Nam</label>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="female">Nữ</label>
+                        <input type="radio" id="female" name="sex" value="female">
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        <label> Nghề nghiệp</label>
+                    </td>
+                    <td>
+                        <select name="Jobs" id="Jobs">
+                        <option>Bác sĩ</option>
+                        <option>Kỹ sư</option>
+                        <option>Giáo viên</option>
+                        <option>Khác</option></select>
+                    </td>
+            </tr>
+            <tr>
                 <td>
-                    <label> Nghề nghiệp</label>
+                    <label>Chọn sản phẩm tham gia</label>
                 </td>
                 <td>
-                    <select name="Jobs" id="Jobs">
-                    <option>Bác sĩ</option>
-                    <option>Kỹ sư</option>
-                    <option>Giáo viên</option>
-                    <option>Khác</option></select>
+                    <select name="product" id="product" size="4" multiple>
+                        <option >Kem Đánh răng</option>
+                        <option >Bột Giặt</option>
+                        <option >Sữa Tắm</option>
+                        <option >Dầu gội</option>
+                    </select>
                 </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Chọn sản phẩm tham gia</label>
-            </td>
-            <td>
-                <select name="product" id="product" size="4" multiple>
-                    <option >Kem Đánh răng</option>
-                    <option >Bột Giặt</option>
-                    <option >Sữa Tắm</option>
-                    <option >Dầu gội</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td> <label>Số người dự đoán tham gia</label></td>
-            <td> <input type="text"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><button onclick="Myfunction()">Đồng ý</button></td>
-        </tr>
-        <tr id="result"></tr>
-    </table>
+            </tr>
+            <tr>
+                <td> <label>Số người dự đoán tham gia</label></td>
+                <td> <input type="number" id="people" name="people" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="myFunction()">Đồng ý</button></td>
+            </tr>
+            <tr id="result"></tr>
+        </table>
+</div>
     <script>
         function myFunction() {
+            var user = document.getElementById("name").value
+            var address = document.getElementById("address").value
+
+            if(user.length > 0 && address.length > 0){
+                document.getElementById("result").innerHTML = '<td colspan="2"> Bạn đã đăng ký thành công </td>';
+            }
+            else{
+                alert ("Sai");
+            }
+            return false
+        }
+        </script>
         
         }
     </script>
