@@ -1,0 +1,53 @@
+/* *{
+    padding: 0;
+    margin:0;
+} */
+.menu .list .item{
+    display: inline-block;
+    padding: 12px;
+
+}
+.menu{
+    background-color: #323031;
+    height: 43px;
+}
+ul, li, body{
+    padding: 0;
+    margin:0;
+}
+.menu .list .item a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu .list{
+    text-align: center;
+}
+.menu .list .item a:hover{
+    color: yellow;
+}
+.menu .list .item:hover{
+    background-color: #7bb9f3;
+    cursor: pointer;
+}
+/* submenu */
+.menu .list .item{
+    position: relative;
+}
+.menu .list .item .sub-menu{
+    position: absolute;
+    left: 0px;
+    top: 42px;
+    display: none;
+}
+.menu .list .item .sub-menu .sub-item{
+    list-style-type: none;
+    background-color: #323031;
+    width: 200px;
+}
+.sub-menu .sub-list{
+    text-align: start;
+}
+.menu .list .item:hover .sub-menu{
+    display: block;
