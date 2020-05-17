@@ -1,0 +1,47 @@
+header{
+    background-color: aqua;
+}
+nav{
+    background-color: yellow;
+}
+section{
+    background-color: green;
+}
+aside{
+    background-color: red;
+}
+article{
+    background-color: silver;
+}
+footer{
+    background-color: teal;
+}
+body, ul, li, h4{
+    padding: 0px;
+    margin: 0px;
+}
+section aside .heading{
+    margin: 0px;
+}
+/* Layout */
+/* aside{
+    width: 20%;
+    float: left;
+}
+article{
+    width: 70%;
+    float: right;
+}
+footer{
+    clear: both; */
+/* } */
+/* grid layout */
+.block{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    /* margin: auto; */
+}
+/* .block_transform{
+    transform: scale(10, 10);
+} */
