@@ -1,2 +1,0 @@
-Tính tổng các số nhỏ hơn 100.
-Giai thừa của 10.
